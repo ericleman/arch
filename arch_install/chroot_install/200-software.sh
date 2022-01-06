@@ -7,13 +7,13 @@ DESKTOP=$1
 
 pacman -Syyu --noconfirm
 
-pacman -S screenfetch lolcat --noconfirm --needed
-pacman -S gnome-icon-theme arc-gtk-theme materia-gtk-theme papirus-icon-theme materia-kde kvantum-qt5 kvantum-theme-materia --noconfirm --needed
+# pacman -S screenfetch lolcat --noconfirm --needed
+# pacman -S gnome-icon-theme arc-gtk-theme materia-gtk-theme papirus-icon-theme materia-kde kvantum-qt5 kvantum-theme-materia --noconfirm --needed
 pacman -S bash-completion --noconfirm --needed
-pacman -S ttf-font-awesome ttf-dejavu ttf-roboto --noconfirm --needed
+# pacman -S ttf-font-awesome ttf-dejavu ttf-roboto --noconfirm --needed
 pacman -S simplescreenrecorder --noconfirm --needed
 pacman -S xdg-user-dirs --noconfirm --needed
-pacman -S xorg-server-xephyr xorg-server-xvfb qtile imagemagick --noconfirm --needed
+# pacman -S xorg-server-xephyr xorg-server-xvfb qtile imagemagick --noconfirm --needed
 
 echo "################################################################"
 echo "########################### 201-software.sh ####################"
@@ -35,8 +35,8 @@ echo "################################################################"
 #pacman -S libreoffice-fresh --noconfirm --needed
 # pacman -S chromium --noconfirm --needed # I use Chrome instead
 # pacman -S pepper-flash --noconfirm --needed # does not exist since 2021
-pacman -S vlc --noconfirm --needed
-pacman -S bleachbit --noconfirm --needed
+# pacman -S vlc --noconfirm --needed
+# pacman -S bleachbit --noconfirm --needed
 
 # lib32-libpulse is required to get sound in wine.
 # lib32-openal seems to be required for Pokerstars
@@ -54,9 +54,9 @@ echo "################################################################"
 
 if [ "$DESKTOP" == "kde" ]
 then
-    pacman -S latte-dock --noconfirm --needed
-    /chroot_install/640-latte-personal-settings.sh
-
+    # pacman -S latte-dock --noconfirm --needed
+    # /chroot_install/640-latte-personal-settings.sh
+    echo "NOTHING"
     #pacman -S plasma5-applets-active-window-control --noconfirm --needed
 fi
 
