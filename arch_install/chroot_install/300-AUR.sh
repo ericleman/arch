@@ -12,8 +12,8 @@ then
     pacman -R --noconfirm gnome-terminal
     su eric -c "trizen -Syu --noconfirm gnome-terminal-transparency"
 
-    su eric -c "trizen -Syu --noconfirm conky-lua"
-    /chroot_install/630-conky-personal-settings.sh
+    # su eric -c "trizen -Syu --noconfirm conky-lua"
+    # /chroot_install/630-conky-personal-settings.sh
 fi
 
 if [ "$DESKTOP" == "kde" ]
