@@ -120,7 +120,7 @@ if [ "$HARDWARE" == "vmware" ]; then /chroot_install/130-vmware.sh; fi
 /chroot_install/200-software.sh $DESKTOP
 /chroot_install/300-AUR.sh $DESKTOP
 
-if [ "$DESKTOP" == "gnome" ]; then /chroot_install/500-gnome-settings.sh; fi
-if [ "$DESKTOP" == "kde" ]; then /chroot_install/500-kde-settings.sh; fi
-/chroot_install/600-other-personal-settings.sh
+# if [ "$DESKTOP" == "gnome" ]; then /chroot_install/500-gnome-settings.sh; fi
+# if [ "$DESKTOP" == "kde" ]; then /chroot_install/500-kde-settings.sh; fi
+# /chroot_install/600-other-personal-settings.sh
 
