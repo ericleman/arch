@@ -7,11 +7,11 @@ DESKTOP=$1
 
 if [ "$DESKTOP" == "gnome" ]
 then
-    su eric -c "trizen -Syu --noconfirm gnome-shell-extension-dash-to-dock"
+    # su eric -c "trizen -Syu --noconfirm gnome-shell-extension-dash-to-dock"
 
-    pacman -R --noconfirm gnome-terminal
-    su eric -c "trizen -Syu --noconfirm gnome-terminal-transparency"
-
+    # pacman -R --noconfirm gnome-terminal
+    # su eric -c "trizen -Syu --noconfirm gnome-terminal-transparency"
+    echo "NOTHING"
     # su eric -c "trizen -Syu --noconfirm conky-lua"
     # /chroot_install/630-conky-personal-settings.sh
 fi
