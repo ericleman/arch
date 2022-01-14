@@ -12,7 +12,7 @@ echo "################################################################"
 USERNAME=eric
 PASSWORD=$1
 DESKTOP=gnome
-HARDWARE=vmware
+HARDWARE=vbox
 SWAP_SIZE=12
 LTS=no
 
